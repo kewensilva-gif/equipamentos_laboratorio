@@ -1,4 +1,4 @@
-# equipamentos_laboratorios
+# Equipamentos de laboratório
 
 A new Flutter project.
 
