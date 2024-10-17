@@ -26,7 +26,27 @@ class _EquipamentsScreenState extends State<EquipamentsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Equipamentos')),
+      appBar: AppBar(
+        title: const Text('Equipamentos'),
+        actions: [ 
+          FloatingActionButton( // Botão para linkar a página de criação
+            onPressed: () {
+              Navigator.pushNamed(context, '/create');
+            },
+            child: const Icon(Icons.add, size: 20.0),
+            backgroundColor: Colors.blue,
+            foregroundColor: Colors.white,
+            shape: const CircleBorder(
+              side: BorderSide(
+                color: Colors.white,
+                width: 0.0,
+              ),
+            ),
+            tooltip: 'Novo Equipamento',
+          ),
+
+        ],
+      ),
       body: FutureBuilder<List<Equipament>>(
         future: _equipamentsFuture,
         builder: (context, snapshot) {

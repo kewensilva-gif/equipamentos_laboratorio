@@ -3,7 +3,7 @@ import 'dart:convert';
 import '../models/equipament_model.dart';
 
 class ApiService {
-  final String httpUrl = "https://9e67-2804-4ff4-20b-3000-391b-fd7e-f04f-8fdc.ngrok-free.app"; 
+  final String httpUrl = "https://2e9a-2804-4ff4-20b-3000-348f-416e-c2a5-7308.ngrok-free.app"; 
 
   // ApiService() {
   // }
