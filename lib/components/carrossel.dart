@@ -23,6 +23,7 @@ class CarrosselState extends State<Carrossel> {
           children: widget.equipaments.isNotEmpty
               ? widget.equipaments.map((equipament) {
                   return Equipamento(
+                    id: equipament.id,
                     title: equipament.name,
                     description: equipament.description,
                     imageUrl: "${widget.httpUrl}/storage/${equipament.image}",

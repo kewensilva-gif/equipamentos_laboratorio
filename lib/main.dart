@@ -1,4 +1,5 @@
 import 'package:equipamentos_laboratorios/screens/create_equipament_screen.dart';
+import 'package:equipamentos_laboratorios/screens/show_equipament_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:equipamentos_laboratorios/screens/equipaments_screen.dart';
 
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         // '/': (context) => const Home(title: 'Flutter Demo Home Page'),
         '/create': (context) => const CreateEquipament(title: 'Criação de equipamento'),
         '/': (context) => const EquipamentsScreen(),
+        '/detalhe': (context) => const DetalheEquipamento(id: 1),
         // '/': (context) => const EquipamentsScreen(),
       },
     );
