@@ -39,6 +39,20 @@ dependencies:
   # cookie_jar: ^4.0.8
   # path_provider: ^2.1.4
   image_picker: ^0.8.5+3
+  flutter_native_splash: ^1.2.0
+  flutter_launcher_icons: ^0.9.1
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: "assets/app/splash.png"
+  android: true
+
+flutter_icons:
+  image_path: "assets/app/icon.png"
+  android: "launcher_icon"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/app/icon-android.png"
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
