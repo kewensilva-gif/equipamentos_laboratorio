@@ -15,16 +15,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Equipamentos de Laboratórios',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
       routes: {
-        // '/': (context) => const Home(title: 'Flutter Demo Home Page'),
-        '/create': (context) => const CreateEquipament(title: 'Criação de equipamento'),
         '/': (context) => const EquipamentsScreen(),
+        '/create': (context) => const CreateEquipament(title: 'Criação de equipamento'),
         '/detalhe': (context) => const DetalheEquipamento(id: 1),
-        // '/': (context) => const EquipamentsScreen(),
       },
+      debugShowCheckedModeBanner: false,
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:equipamentos_laboratorios/components/equipamento.dart';
+import 'package:equipamentos_laboratorios/components/equipamentCard.dart';
 
 class Carrossel extends StatefulWidget {
   final List<dynamic> equipaments; // Lista de equipamentos
@@ -39,7 +39,7 @@ class CarrosselState extends State<Carrossel> {
         Positioned(
           left: 16,
           child: CircleAvatar(
-            backgroundColor: const Color.fromARGB(255, 255, 255, 255).withOpacity(0.5), // Fundo semitransparente
+            backgroundColor: const Color.fromARGB(255, 17, 64, 219).withOpacity(0.5), // Fundo semitransparente
             radius: 24,
             child: IconButton(
               icon: const Icon(Icons.arrow_back, color: Colors.white), // Ícone branco
@@ -53,10 +53,10 @@ class CarrosselState extends State<Carrossel> {
           ),
         ),
         Positioned(
-          right: 16, // Posiciona o botão na direita
+          right: 16,
           child: CircleAvatar(
-            backgroundColor: const Color.fromARGB(255, 255, 255, 255).withOpacity(0.5), // Fundo semitransparente
-            radius: 24, // Tamanho do círculo
+            backgroundColor: const Color.fromARGB(255, 17, 64, 219).withOpacity(0.5), // Fundo semitransparente
+            radius: 24,
             child: IconButton(
               icon: const Icon(Icons.arrow_forward, color: Colors.white), // Ícone branco
               onPressed: () {

@@ -43,10 +43,10 @@ class DetalheEquipamentoState extends State<DetalheEquipamento>  {
                 children: [
                   SizedBox(
                     width: double.infinity,
-                    height: 300, // Altura máxima de 300 pixels
+                    height: 300,
                     child: Image.network(
                       "${_apiService.httpUrl}/storage/${equipament.image}",
-                      fit: BoxFit.cover, // Ajusta a imagem mantendo a proporção
+                      fit: BoxFit.cover,
                     ),
                   ),
                   const SizedBox(height: 16),
